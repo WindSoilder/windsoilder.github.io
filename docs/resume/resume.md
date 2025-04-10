@@ -1,7 +1,7 @@
 Keith Chen
 Back-End Engineer
 
-yonghengzer@gmail.com
+WindSoilder@outlook.com
 https://github.com/WindSoilder
 
 # Profile
@@ -16,7 +16,7 @@ programming languages: python, rust.
 
 Back-End Framework and Databases: flask/fastapi, celery, mongodb, mysql, redis, rabbitmq(mainly used with celery)
 
-Testing and Automation Frameworks: pytest, unittest.mock
+Testing and Automation Frameworks: pytest
 
 Solid basic computer knowledge includes Computer network(HTTP/TCP/IP), Data structure, basic algorithm.
 
@@ -26,22 +26,35 @@ Experience with kunernetes and docker basic usage.
 1. Ricequant (Permanent)
 Sofeware Engineer, Apr 2018 - Present
 
-1. Redesign and write internal web service named performance attribution for customer, accomplished:
-- required much less memory(from 32G to 8G)
-- gained much more performance(reduce 70% of the runtime in the general scenario)
-- get more extendable and easily testing service.
+1. I have prompted and rewritten a new C-S-based MongoDB synchronizer that enables syncing of internal MongoDB data to customers.   Users can specify which database and collection to sync. After careful design, the  synchronizer now achieves the following:
+- During full client synchronization, the original database can continue providing services as usual (without a direct increase in workload).
+- Customers receive reliable and real-time updates from the original database.
+- The company now requires fewer MongoDB instances (from 4 to 1).
 
-2. Prompt and rewrite a new C-S based mongodb synchronize, it supports sync internal mongodb data to customer.  User can specific which database, which collection to sync, after a careful design, the syncer accomplished:
-- during client full synchronized progress, the origin database can provide services as usual(no directly increasing workload)
-- customer get reliable and realtime update from original database.
-- less mongodb instance is used in the company(from 4 to 1).
+2. I have redesigned and rewritten an web service named  "Performance Attribution" for customers. This achieves the following:
 
-3. I'm also working on something includes:
-- Finance service developments
-- design RESTFUL api
-- makes some profile and performance improvement for existing code base.
+- requiring significantly less memory (from 32GB to 8GB)
+- performing much faster (with a 70% reduction in runtime in general scenarios).
+- Additionally, the service is now more extendable and easier to test.I am also maintaining my company's stock data services
 
-Tools & Technologies: Python3(pandas + pytest + FASTAPI + celery + mypy), Rust, RESTFUL api design, distributed computing, rust, mongodb, Jira, Jenkins, Confluence
+3. I'm also maintaining my company's data services, which includes:
+- client side: stock data SDK for customers fetching financial data and market data easily
+- server side:
+    a. data server
+    b. bar-gateway server
+    c. index market data real time generator 
+    d. user service
+    e. license service
+    f. etc..
+More detailed: https://www.ricequant.com/doc/rqdata/python/
+
+4. I am also working on the following:
+- Developing finance services
+- Designing RESTful APIs
+- Making profile and performance improvements to existing code bases.
+- Rewriting some components in rust, it makes these components run 3.5x faster in general.
+
+Tools and Technologies used include: Python 3, Rust, RESTful API design, distributed computing, MongoDB, Jira, Jenkins, Confluence, Redis
 
 2. Dell software (Permanent)
 Associate Software Developer, Jun 2016 - Apr 2018
@@ -77,4 +90,7 @@ Currently I'm acting as a core team member, what I have done are:
 3. develop a plugin which makes nushell compatible to many binary format, which includes ttf, png, bmp and so on...
 4. investigate and develop an nushell lib which empowers background job
 5. add signature information when user want to get help on one command, it makes commands much easier to use.
-6. review pull requests from other contributors
+6. Make nushell works better with file redirection.
+7. review pull requests from other contributors
+
+All my contributions can be seen here: https://github.com/nushell/nushell/pulls?q=author%3AWindSoilder
